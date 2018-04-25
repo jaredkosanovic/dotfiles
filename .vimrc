@@ -40,6 +40,10 @@ set textwidth=80
 set colorcolumn=+1
 set ruler
 
+" Try to show at least three lines and two columns of context when scrolling
+set scrolloff=3
+set sidescrolloff=2
+
 " Auto-save when focus is lost
 au FocusLost * :wa
 
