@@ -87,7 +87,7 @@ alias pip="python3 -m pip"
 alias ls="ls -l"
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home
-export PATH=$PATH:/Users/jared/.gradle/wrapper/dists/gradle-2.4-all/6r4uqcc6ovnq6ac6s0txzcpc0/gradle-2.4/bin:/Users/jared/instantclient_12_2:/Users/jared
+export PATH=$PATH:/Users/jared/.gradle/wrapper/dists/gradle-2.4-all/6r4uqcc6ovnq6ac6s0txzcpc0/gradle-2.4/bin:/Users/jared/instantclient_12_2
 export ANSIBLE_ROLES_PATH=/Users/jared/github/github-enterprise/ansible-playbooks/ansible-private-roles/roles:/Users/jared/github/github-enterprise/ansible-playbooks/ansible-roles/roles
 
 export DYLD_LIBRARY_PATH=/Users/jared/instantclient_12_2
@@ -97,6 +97,12 @@ export ORACLE_PATH=/Users/jared/instantclient_12_2
 export CLASSPATH="$CLASSPATH:/Users/jared/xe-dependencies/junit-4.12.jar:/Users/jared/xe-dependencies/hamcrest-core-1.3.jar:/Users/jared/xe-dependencies/opensaml-1.1.0.jar"
 export JAVA_OPTS="-XX:MaxPermSize=4096m -XX:PermSize=2048m -Xms1024m -Xmx4096m -XX:-UseGCOverheadLimit"
 export GRAILS_OPTS="-XX:MaxPermSize=4096m -XX:PermSize=2048m -Xms1024m -Xmx4096m -server -XX:-UseGCOverheadLimit"
+
+export GPG_TTY=$(tty)
+
+autoload bashcompinit
+bashcompinit
+eval "$(jira --completion-script-bash)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/jared/.sdkman"
